@@ -1,3 +1,7 @@
+html {scroll-behavior: smooth;}
+html,body {
+  min-height: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,63 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+h2 {
+  padding-bottom: 40px;
+}
+
+section {
+  padding: 60px 0;
+}
+/* Show all cases */
+.sectionAllCases {
+  background: #EAEAEA url('./assets/bgAllContries2.png') no-repeat center; 
+  background-size: 80%; 
+}
+.allCases {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.allCases .card {
+  min-width: 30%;
+}
+.iconsAllCases {
+  font-size: 10em;
+  margin-bottom: 14px;
+}
+.casesTitle {
+  text-transform: uppercase;
+}
+.casesResult {
+  display: block;
+  font-size: 3em;
+}
+
+.contriesFlag {
+  height: 100%;
+  width: 40px;
+  margin-right: 15px;
+}
+
+.headerContries {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerContries .badge {
+  margin: 0 2px;
+}
+.spinner {
+  text-align: center;
+  font-size: 1.5em;
+  animation: spin 2s linear infinite;
+}
+.blackSpinner {
+  color: black;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
