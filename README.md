@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Corona Virus Monitor is a Web App that show numbers of COVID-19. It's a way I found to show what I can do as Front-End Engineer. It's build using React, Bootstrap and consume date from API.
 
 ## Available Scripts
 
