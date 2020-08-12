@@ -3,22 +3,20 @@ import { Accordion, Card, Container, Badge, Button, OverlayTrigger, Tooltip, Lis
 import NumberFormat from 'react-number-format';
 
 
-// const END_POINT_GLOBAL_CASES = 'https://corona.lmao.ninja/all';
+const END_POINT_CONTINENTS_CASES = 'https://disease.sh/v2/countries';
 class ShowContries extends Component {
 
-    // let totalCases = 0;
     state = {
         contries: []
     };
 
     componentDidMount() {
-        fetch('https://corona.lmao.ninja/countries')
+        fetch(END_POINT_CONTINENTS_CASES)
             .then(res => res.json())
             .then(res => {
-                console.log(res)
                 // let totalCases = res.cases;
                 this.setState({
-                    contries: res
+                   contries: res
                 });
             });
     }

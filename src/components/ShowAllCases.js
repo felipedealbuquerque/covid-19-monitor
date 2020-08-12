@@ -4,7 +4,7 @@ import NumberFormat from 'react-number-format';
 import { FaGlobeAmericas, FaUserAstronaut, FaUserInjured, FaSpinner } from "react-icons/fa";
 
 
-// const END_POINT_GLOBAL_CASES = 'https://corona.lmao.ninja/all';
+const END_POINT_GLOBAL_CASES = 'https://disease.sh/v2/all';
 class ShowAllCases extends Component {
 
     // let totalCases = 0;
@@ -15,7 +15,7 @@ class ShowAllCases extends Component {
     };
 
     componentDidMount() {
-        fetch('https://corona.lmao.ninja/all')
+        fetch(END_POINT_GLOBAL_CASES)
             .then(res => res.json())
             .then(res => {
                 this.setState({
